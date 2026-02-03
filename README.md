@@ -1,4 +1,4 @@
-# Mageek's RADIUS System
+# GitHub Projects - Mageek's RADIUS System
 
 Complete RADIUS Management Panel built with PHP and MySQL
 
@@ -32,19 +32,25 @@ Complete RADIUS Management Panel built with PHP and MySQL
 └── raduis-plan.md          # Quick reference
 ```
 
+## ⚠️ Important Notes
+
+**⚠️ Contains passwords in scripts:**
+- `install-radius.sh` - Contains MySQL password for demo
+- These are example passwords for installation guide
+- **IMPORTANT:** Change all passwords in production!
+
 ## 🎯 Installation (Ubuntu 22.04)
 
-### Quick Install (3 minutes)
+### Quick Install
 
 ```bash
 # 1. Upload all files to your server
-# 2. Navigate to the directory
 cd /var/www/html/radius-panel
 
-# 3. Run installation script
+# 2. Run installation script
 bash install-radius.sh
 
-# 4. Access your panel
+# 3. Access panel
 http://YOUR_IP/radius-panel/radius-login.php
 
 # Default credentials:
@@ -175,7 +181,7 @@ Edit `/etc/freeradius/3.0/clients.conf`:
 ```conf
 client HomeNetwork {
     ipaddr = 192.168.1.0/24
-    secret = mysecretkey123
+    secret = mysecret123
     shortname = home_network
 }
 ```
