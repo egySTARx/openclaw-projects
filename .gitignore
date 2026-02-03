@@ -1,0 +1,34 @@
+# Keep only RADIUS project files
+*~
+
+.DS_Store
+*.log
+*.env
+*.key
+*.pem
+*.bak
+*.backup-*
+*.tmp
+
+# Ignore everything else
+AGENTS.md
+BOOTSTRAP.md
+HEARTBEAT.md
+IDENTITY.md
+MEMORY.md
+README-gmail.md
+README-meetings.md
+SOUL.md
+TOOLS.md
+USER.md
+add-github-config.sh
+create-github-repo.sh
+install-radius.exp
+memory/
+news/
+radius-complete-structure.txt
+*.sqlite
+*.db
+credentials/
+secrets/
+workspace/
